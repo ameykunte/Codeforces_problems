@@ -6,25 +6,24 @@ using namespace std;
 
 int main()
 {
-    int n;
+    int n ;
     cin >> n;
-    int temp = 0;
-    for (int i = 0; i < n; i++)
-    {
+    y++;
 
-        cin >> temp;
-        if (temp == 1)
+    while (true)
+    { 
+
+        int th, hu, te, un; // units,tens,hundredths,thousandths
+        un = y % 10;
+        te = y / 10 % 10;
+        hu = y / 100 % 10;
+        th = y / 1000;
+
+        if (un != te && un != hu && un != th && te != hu && te != th && hu != th)
         {
-            cout << "HARD" << endl;
             break;
-            return 0;
-
         }
+        y++;
     }
-    if (temp != 1)
-    {
-        cout << "EASY" << endl;
-        return 0;
-    }
-
+    cout << y << endl;
 }

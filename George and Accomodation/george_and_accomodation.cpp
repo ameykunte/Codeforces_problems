@@ -1,4 +1,4 @@
-// https://codeforces.com/contest/1674/problem/B
+//https://codeforces.com/problemset/problem/467/A
 #include <cmath>
 #include <iostream>
 #include <bits/stdc++.h>
