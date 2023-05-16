@@ -6,12 +6,13 @@ using namespace std;
 
 int main()
 {
-    int n ;
-    cin >> n;
+    int y;
+    cin >> y;
     y++;
 
     while (true)
-    { 
+    {
+        
 
         int th, hu, te, un; // units,tens,hundredths,thousandths
         un = y % 10;
