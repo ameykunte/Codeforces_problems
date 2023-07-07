@@ -9,19 +9,27 @@ using namespace std;
 int main(){
     string s;
     cin>>s;
-    int count = 0;
+    int ans = 0;
+    int count = 1;
     for (int i = 0; i < s.length(); i++)
     {
         if (s[i] == s[i+1])
         {
             count++;
+        }else{
+            count = 1;
         }
         if(count>=7){
-            cout<<"YES"<<endl;
-        }else{
-            cout<<"NO"<<endl;
+            ans = 1;
+            break;
+
         }
 
+    }
+    if(ans == 1){
+        cout<<"YES"<<endl;}
+    else{
+        cout<<"NO"<<endl;
     }
     
 }
